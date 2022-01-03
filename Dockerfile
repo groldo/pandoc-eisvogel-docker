@@ -22,6 +22,7 @@ RUN mkdir -p /usr/share/pandoc/data/templates && \
         -O /usr/share/pandoc/data/templates/eisvogel.latex
 
 COPY entrypoint.sh /entrypoint.sh
+RUN chmod +x /entrypoint.sh
 RUN mkdir /app
 WORKDIR /app
 
